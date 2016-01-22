@@ -1,0 +1,125 @@
+body {
+	max-width: 2048px;
+	height: 1300px;
+	position: relative;
+	background-image: url(../images/main.png);
+	background-repeat: no-repeat;
+}
+
+#main-text {
+	color: #00875b;
+	font-size: 85px;
+	font-family: 'corbel regular', sans-serif;
+	text-align: left;
+	margin: 140px 100px 0 390px;
+}
+
+.text {
+	color: #00875b;
+	font-size: 43.06px;
+	font-family: 'corbel regular', sans-serif;
+	text-align: justify;
+	margin: 140px 100px 0 390px;
+	width: 1320px;
+}
+/*injuries*/
+
+.presentation {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+ .presentation-item {
+	list-style: none;
+	width: 170px;
+	position: relative;
+	color: #00875b;
+	font-size: 39px;
+	-webkit-transition: color 0.7s ease-in-out;
+	transition: color 0.7s ease-in-out;
+	margin: 0 160px 0 0;
+}
+
+.presentation-item::after {
+	content: '✔';
+	position: absolute;
+	top: 38px;
+	left: 475px;
+	font-size: 100px;
+	/*background: -webkit-linear-gradient(#165e4a, #3a9f83);
+	background: linear-gradient(#165e4a, #3a9f83);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+}
+
+.presentation-item--active {
+	color: red;
+}
+
+.presentation-item img {
+	width: 250px;
+	height: 250px;
+	margin: 50px 0 0 340px;
+	
+}
+
+.presentation-item p {
+	margin-left: 392px;
+	font-size: 39px;
+	font-weight: bold;
+}
+
+/*flash*/
+
+#flashing {
+	position: relative;
+}
+
+#flashing .flash {
+	position: absolute;
+	left: 1640px;
+	top:15px;
+	width: 200px;
+}
+
+/*knee*/
+
+#knee {
+	position: relative;
+}
+
+.knee-next {
+	position: absolute;
+	left: 625px;
+}
+
+/*magnifier*/
+
+#magnifier {
+	position: relative;
+}
+
+.magnifier-next {
+	position: absolute;
+	left: 1350px;
+	bottom: -10px;
+}
+#lupa{
+margin-bottom: -390px;}
+/*zoom*/
+
+.img {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: -webkit-transform 4s ease-in-out;
+	transition: transform 4s ease-in-out;
+	z-index: 1000;
+}
+
+.img--zoomed {
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+}
